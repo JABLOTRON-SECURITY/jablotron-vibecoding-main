@@ -1,0 +1,94 @@
+name: Nový nápad na aplikaci
+description: Podejte nápad na interní aplikaci. Schvalovatel ho posoudí a rozhodne o dalším postupu.
+title: "Nápad: "
+labels: ["napad"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Vyplnění zabere pět minut. **Nepište sem skutečná data** – stačí popsat, s jakými údaji by aplikace pracovala.
+        Podrobnosti k úrovním rizika: [úrovně rizika](../blob/main/plugins/jablotron/reference/urovne-rizika.md) · [třídy dat](../blob/main/plugins/jablotron/reference/tridy-dat.md)
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Jaký problém aplikace řeší?
+      description: Co dnes nefunguje nebo stojí zbytečně času. Ideálně s příkladem z praxe.
+    validations:
+      required: true
+
+  - type: input
+    id: komu
+    attributes:
+      label: Komu pomůže a kolika lidem?
+      placeholder: např. koordinátorům servisu, cca 15 lidí
+    validations:
+      required: true
+
+  - type: textarea
+    id: data
+    attributes:
+      label: "Otázka 1: S jakými daty bude aplikace pracovat?"
+      description: Popište údaje (sloupce), odkud pocházejí a jak se do aplikace dostanou. Přímé napojení na firemní systém není povolené – jen ruční export.
+      placeholder: např. týdenní export reklamací ze servisního systému – počty a typy, bez jmen a adres
+    validations:
+      required: true
+
+  - type: dropdown
+    id: pristup
+    attributes:
+      label: "Otázka 2: Kdo k ní bude mít přístup?"
+      options:
+        - Pouze já (osobní experiment)
+        - Kolegové ve firmě po přihlášení firemním účtem
+        - Lidé mimo firmu (partneři, zákazníci, veřejnost)
+    validations:
+      required: true
+
+  - type: textarea
+    id: dopad
+    attributes:
+      label: "Otázka 3: Co se stane, když selže nebo vrátí chybný výsledek?"
+      placeholder: např. zdrží se týdenní porada, data se dají dohledat ručně
+    validations:
+      required: true
+
+  - type: dropdown
+    id: uroven
+    attributes:
+      label: Navržená úroveň rizika
+      description: Rozhoduje nejvyšší úroveň, ke které vede kterákoli odpověď. Konečnou úroveň potvrdí schvalovatel.
+      options:
+        - L0 – osobní experiment
+        - L1 – týmová pomůcka
+        - L2 – firemní nástroj
+        - L3 – kritická aplikace
+        - Nevím, prosím o pomoc
+    validations:
+      required: true
+
+  - type: input
+    id: vlastnik
+    attributes:
+      label: Věcný vlastník
+      description: Kdo aplikaci zadává, přebírá a ručí za správnost výstupů (nemusí být tvůrce).
+    validations:
+      required: true
+
+  - type: input
+    id: tvurce
+    attributes:
+      label: Tvůrce
+      description: Kdo bude aplikaci vyvíjet.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: potvrzeni
+    attributes:
+      label: Potvrzení
+      options:
+        - label: V tomto formuláři nejsou žádná skutečná data.
+          required: true
+        - label: Ověřil(a) jsem, že podobná aplikace ve firmě ještě není.
+          required: false

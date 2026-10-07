@@ -1,0 +1,14 @@
+{
+  "name": "jablotron-vibecoding",
+  "description": "Interní pluginy Jablotronu pro vývoj aplikací s Claude Code.",
+  "owner": {
+    "name": "Jablotron a.s."
+  },
+  "plugins": [
+    {
+      "name": "jablotron",
+      "source": "./plugins/jablotron",
+      "description": "Firemní postup a pravidla pro vývoj interních aplikací: specifikace, plán, implementace s testy napřed a nezávislou kontrolou, dokončení s bezpečnostním review a shrnutím změny, předání a spuštění."
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Pravidla a proces
+    url: https://github.com/jablotron-org/jablotron-vibecoding/blob/main/proces/README.md
+    about: Jak funguje vývoj aplikací s Claude Code v Jablotronu

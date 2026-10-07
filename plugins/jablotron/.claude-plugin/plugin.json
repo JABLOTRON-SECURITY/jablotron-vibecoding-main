@@ -1,0 +1,17 @@
+{
+  "name": "jablotron",
+  "version": "1.0.1",
+  "description": "Firemní postup a pravidla pro vývoj interních aplikací s Claude Code v Jablotronu: od specifikace přes plán a implementaci s testy napřed a nezávislou kontrolou až po pull request, bezpečnostní review, shrnutí změny, předání a spuštění. Pro aplikace ze šablony Next.js i z PHP šablony pro JBT Platform.",
+  "author": {
+    "name": "Softo s.r.o.",
+    "url": "https://softo.cz"
+  },
+  "keywords": [
+    "jablotron",
+    "jablotron-vibecoding",
+    "bezpecnost",
+    "specifikace",
+    "tdd",
+    "code-review"
+  ]
+}
