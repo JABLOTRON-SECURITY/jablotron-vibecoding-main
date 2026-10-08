@@ -1,5 +1,5 @@
 {
-  "name": "jablotron-vibecoding",
+  "name": "jablotron-code-plugin",
   "description": "Interní pluginy Jablotronu pro vývoj aplikací s Claude Code.",
   "owner": {
     "name": "Jablotron a.s."
